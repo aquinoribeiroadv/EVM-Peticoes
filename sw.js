@@ -1,4 +1,4 @@
-const CACHE = 'evm-peticoes-v1';
+const CACHE = 'evm-peticoes-v4';
 const ASSETS = [
   '/EVM-Peticoes/',
   '/EVM-Peticoes/index.html',
