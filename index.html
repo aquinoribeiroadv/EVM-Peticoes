@@ -700,7 +700,7 @@ async function gerarPeticao() {
       'CPF':                                    cliente.cpf,
       'Artigo_oa':                              cliente.sexo === 'M' ? 'o' : 'a',
       'ARTIGO_OA1':                             cliente.sexo === 'M' ? 'O' : 'A',
-      'ID_POLO_ATIVO':                          cliente.nome.split(' ')[0],
+      'ID_POLO_ATIVO':                          cliente.sexo === 'M' ? 'Autor' : 'Autora',
       'Informe_seu_estado_civil':               cliente.estadoCivil,
       'Endereço_Só_o_nome_da_RuaAvenida':       cliente.rua,
       'Número_de_onde_mora_número_da_casa_ou_p':cliente.numero,
