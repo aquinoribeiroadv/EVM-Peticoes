@@ -8,8 +8,8 @@
 <link rel="apple-touch-icon" href="icon-192.png">
 <title>EVM — Petições</title>
 <script src="https://accounts.google.com/gsi/client" onload="gisLoaded()" async defer></script>
-<script src="https://unpkg.com/pizzip@3.1.4/dist/pizzip.min.js"></script>
-<script src="https://unpkg.com/docxtemplater@3.45.0/build/docxtemplater.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pizzip/3.1.4/pizzip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/docxtemplater/3.40.0/docxtemplater.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -739,7 +739,7 @@ async function gerarPeticao() {
     };
 
     const zip = new PizZip(docxComImgs);
-    const doc = new Docxtemplater(zip, {
+    const doc = new docxtemplater(zip, {
       paragraphLoop: true,
       linebreaks: true,
       delimiters: { start: '\u00ab', end: '\u00bb' },
